@@ -1,5 +1,7 @@
 #pragma once
-
+#include "frmTasks.h"
+#include "frmMeetings.h"
+#include "frmTalleres.h"
 namespace appgrpucpView {
 
 	using namespace System;
@@ -8,10 +10,20 @@ namespace appgrpucpView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	
 
 	/// <summary>
 	/// Resumen de frmLayout
 	/// </summary>
+	/// 
+
+	/*public ref class FormCollection : System::Collections::ReadOnlyCollectionBase {
+
+	public: IGNORAR ESTOOOO 
+		FormCollection();
+
+	};*/
+
 	public ref class frmLayout : public System::Windows::Forms::Form
 	{
 	public:
@@ -44,6 +56,7 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::ToolStripMenuItem^ notificacionesToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ dataComponentsToolStripMenuItem;
 	protected:
+
 
 	private:
 		/// <summary>
@@ -94,7 +107,7 @@ namespace appgrpucpView {
 			this->menuStrip1->LayoutStyle = System::Windows::Forms::ToolStripLayoutStyle::VerticalStackWithOverflow;
 			this->menuStrip1->Location = System::Drawing::Point(0, 25);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(199, 524);
+			this->menuStrip1->Size = System::Drawing::Size(199, 543);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			this->menuStrip1->ItemClicked += gcnew System::Windows::Forms::ToolStripItemClickedEventHandler(this, &frmLayout::menuStrip1_ItemClicked);
@@ -119,6 +132,7 @@ namespace appgrpucpView {
 			this->tasksToolStripMenuItem->Name = L"tasksToolStripMenuItem";
 			this->tasksToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->tasksToolStripMenuItem->Text = L"Tasks";
+			this->tasksToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmLayout::tasksToolStripMenuItem_Click);
 			// 
 			// meetingsToolStripMenuItem
 			// 
@@ -126,6 +140,7 @@ namespace appgrpucpView {
 			this->meetingsToolStripMenuItem->Name = L"meetingsToolStripMenuItem";
 			this->meetingsToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->meetingsToolStripMenuItem->Text = L"Meetings";
+			this->meetingsToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmLayout::meetingsToolStripMenuItem_Click);
 			// 
 			// talleresToolStripMenuItem
 			// 
@@ -133,6 +148,7 @@ namespace appgrpucpView {
 			this->talleresToolStripMenuItem->Name = L"talleresToolStripMenuItem";
 			this->talleresToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->talleresToolStripMenuItem->Text = L"Talleres";
+			this->talleresToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmLayout::talleresToolStripMenuItem_Click);
 			// 
 			// notificacionesToolStripMenuItem
 			// 
@@ -168,5 +184,21 @@ namespace appgrpucpView {
 #pragma endregion
 	private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
 	}
-	};
+private: System::Void tasksToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	frmTasks^ tareasVentana = gcnew frmTasks();
+	tareasVentana->MdiParent = this;
+	tareasVentana->Show();
+}
+private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmMeetings^ meetingsVentana = gcnew frmMeetings();
+	meetingsVentana->MdiParent = this;
+	meetingsVentana->Show();
+}
+private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmTalleres^ talleresVentana = gcnew frmTalleres();
+	talleresVentana->MdiParent = this;
+	talleresVentana->Show();
+}
+};
 }

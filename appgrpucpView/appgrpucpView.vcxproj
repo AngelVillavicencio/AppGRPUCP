@@ -122,13 +122,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="frmLayout.cpp" />
+    <ClCompile Include="frmMeetings.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
+    <ClCompile Include="frmTalleres.cpp" />
+    <ClCompile Include="frmTasks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmLayout.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frmMeetings.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmTalleres.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmTasks.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -136,8 +148,17 @@
     <EmbeddedResource Include="frmLayout.resx">
       <DependentUpon>frmLayout.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMeetings.resx">
+      <DependentUpon>frmMeetings.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalleres.resx">
+      <DependentUpon>frmTalleres.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTasks.resx">
+      <DependentUpon>frmTasks.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
