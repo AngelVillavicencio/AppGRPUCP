@@ -18,9 +18,15 @@
     <ClCompile Include="frmPrincipal.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="frmLayout.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmPrincipal.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="frmLayout.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

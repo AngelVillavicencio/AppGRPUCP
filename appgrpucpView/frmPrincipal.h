@@ -34,7 +34,7 @@ namespace appgrpucpView {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
+
 	protected:
 
 	private:
@@ -50,24 +50,13 @@ namespace appgrpucpView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(663, 430);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(139, 41);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"Ingresar";
-			this->button1->UseVisualStyleBackColor = true;
 			// 
 			// frmPrincipal
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(897, 530);
-			this->Controls->Add(this->button1);
+			this->ClientSize = System::Drawing::Size(1182, 734);
 			this->Name = L"frmPrincipal";
 			this->Text = L"frmPrincipal";
 			this->ResumeLayout(false);
