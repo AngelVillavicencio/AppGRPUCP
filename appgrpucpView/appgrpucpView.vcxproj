@@ -93,6 +93,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -121,17 +123,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="frmPrincipal.cpp" />
+    <ClCompile Include="LoginForm.cpp" />
+    <ClCompile Include="ManagerComponentForm.cpp" />
+    <ClCompile Include="RecoveryPasswordForm.cpp" />
+    <ClCompile Include="SignForm.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="frmPrincipal.h">
+    <ClInclude Include="LoginForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ManagerComponentForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RecoveryPasswordForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SignForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.h</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerComponentForm.resx">
+      <DependentUpon>ManagerComponentForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecoveryPasswordForm.resx">
+      <DependentUpon>RecoveryPasswordForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignForm.resx">
+      <DependentUpon>SignForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\appgrpucpController\appgrpucpController.vcxproj">
+      <Project>{7fa5cb69-2627-4a80-af7b-678804f82809}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\appgrpucpModel\appgrpucpModel.vcxproj">
+      <Project>{b95e6eb3-f68e-47c4-8be3-2bf37b4ce419}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

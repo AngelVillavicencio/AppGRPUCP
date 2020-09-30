@@ -145,6 +145,11 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\appgrpucpModel\appgrpucpModel.vcxproj">
+      <Project>{b95e6eb3-f68e-47c4-8be3-2bf37b4ce419}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

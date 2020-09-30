@@ -1,16 +1,9 @@
 #include "SignForm.h"
 
-using namespace System;
-using namespace System::Windows::Forms;
-//agregar el espacio de nombres del Controller:
-
-[STAThread]
-
-void main(array<String^>^ arg)
+System::Void appgrpucpView::SignForm::button1_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	Application::EnableVisualStyles();
-	Application::SetCompatibleTextRenderingDefault(false);
-	appgrpucpView::SignForm form;
-	Application::Run(% form);
+    if (ofdSelectImage->ShowDialog() == System::Windows::Forms::DialogResult::OK) {
+        MyPhoto->Image = Image::FromFile(ofdSelectImage->FileName);
+        
+    }
 }
-
