@@ -71,6 +71,11 @@ namespace appgrpucpView {
 	private:
 
 
+	private:
+
+	private:
+
+
 
 	private:
 		/// <summary>
@@ -137,7 +142,7 @@ namespace appgrpucpView {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(49, 131);
+			this->label2->Location = System::Drawing::Point(49, 137);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(65, 17);
 			this->label2->TabIndex = 5;
@@ -154,7 +159,7 @@ namespace appgrpucpView {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(229, 267);
+			this->textBox3->Location = System::Drawing::Point(229, 271);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(100, 22);
 			this->textBox3->TabIndex = 11;
@@ -169,7 +174,7 @@ namespace appgrpucpView {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(49, 266);
+			this->label3->Location = System::Drawing::Point(49, 276);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(88, 17);
 			this->label3->TabIndex = 9;
@@ -186,14 +191,14 @@ namespace appgrpucpView {
 			// 
 			// textBox5
 			// 
-			this->textBox5->Location = System::Drawing::Point(229, 362);
+			this->textBox5->Location = System::Drawing::Point(229, 366);
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(100, 22);
 			this->textBox5->TabIndex = 15;
 			// 
 			// textBox6
 			// 
-			this->textBox6->Location = System::Drawing::Point(229, 316);
+			this->textBox6->Location = System::Drawing::Point(229, 320);
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(100, 22);
 			this->textBox6->TabIndex = 14;
@@ -201,7 +206,7 @@ namespace appgrpucpView {
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(49, 361);
+			this->label5->Location = System::Drawing::Point(49, 371);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(56, 17);
 			this->label5->TabIndex = 13;
@@ -210,7 +215,7 @@ namespace appgrpucpView {
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(49, 321);
+			this->label6->Location = System::Drawing::Point(49, 325);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(87, 17);
 			this->label6->TabIndex = 12;
@@ -218,7 +223,7 @@ namespace appgrpucpView {
 			// 
 			// textBox7
 			// 
-			this->textBox7->Location = System::Drawing::Point(580, 186);
+			this->textBox7->Location = System::Drawing::Point(579, 178);
 			this->textBox7->Name = L"textBox7";
 			this->textBox7->Size = System::Drawing::Size(100, 22);
 			this->textBox7->TabIndex = 23;
@@ -233,7 +238,7 @@ namespace appgrpucpView {
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(400, 185);
+			this->label7->Location = System::Drawing::Point(399, 183);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(126, 17);
 			this->label7->TabIndex = 21;
@@ -242,7 +247,7 @@ namespace appgrpucpView {
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(400, 140);
+			this->label8->Location = System::Drawing::Point(401, 140);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(80, 17);
 			this->label8->TabIndex = 20;
@@ -258,7 +263,7 @@ namespace appgrpucpView {
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(400, 90);
+			this->label9->Location = System::Drawing::Point(400, 96);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(58, 17);
 			this->label9->TabIndex = 17;
@@ -291,14 +296,14 @@ namespace appgrpucpView {
 			// 
 			// textBox11
 			// 
-			this->textBox11->Location = System::Drawing::Point(580, 300);
+			this->textBox11->Location = System::Drawing::Point(581, 317);
 			this->textBox11->Name = L"textBox11";
 			this->textBox11->Size = System::Drawing::Size(100, 22);
 			this->textBox11->TabIndex = 29;
 			// 
 			// textBox12
 			// 
-			this->textBox12->Location = System::Drawing::Point(580, 249);
+			this->textBox12->Location = System::Drawing::Point(581, 266);
 			this->textBox12->Name = L"textBox12";
 			this->textBox12->Size = System::Drawing::Size(100, 22);
 			this->textBox12->TabIndex = 28;
@@ -306,7 +311,7 @@ namespace appgrpucpView {
 			// label12
 			// 
 			this->label12->AutoSize = true;
-			this->label12->Location = System::Drawing::Point(400, 299);
+			this->label12->Location = System::Drawing::Point(401, 322);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(81, 17);
 			this->label12->TabIndex = 27;
@@ -315,7 +320,7 @@ namespace appgrpucpView {
 			// label13
 			// 
 			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(400, 254);
+			this->label13->Location = System::Drawing::Point(401, 271);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(131, 17);
 			this->label13->TabIndex = 26;
@@ -323,7 +328,7 @@ namespace appgrpucpView {
 			// 
 			// textBox13
 			// 
-			this->textBox13->Location = System::Drawing::Point(579, 350);
+			this->textBox13->Location = System::Drawing::Point(580, 367);
 			this->textBox13->Name = L"textBox13";
 			this->textBox13->Size = System::Drawing::Size(100, 22);
 			this->textBox13->TabIndex = 31;
@@ -331,7 +336,7 @@ namespace appgrpucpView {
 			// label14
 			// 
 			this->label14->AutoSize = true;
-			this->label14->Location = System::Drawing::Point(399, 349);
+			this->label14->Location = System::Drawing::Point(401, 372);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(141, 17);
 			this->label14->TabIndex = 30;
@@ -340,9 +345,9 @@ namespace appgrpucpView {
 			// MyPhoto
 			// 
 			this->MyPhoto->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->MyPhoto->Location = System::Drawing::Point(454, 396);
+			this->MyPhoto->Location = System::Drawing::Point(741, 50);
 			this->MyPhoto->Name = L"MyPhoto";
-			this->MyPhoto->Size = System::Drawing::Size(169, 73);
+			this->MyPhoto->Size = System::Drawing::Size(211, 203);
 			this->MyPhoto->TabIndex = 32;
 			this->MyPhoto->TabStop = false;
 			// 
@@ -358,7 +363,7 @@ namespace appgrpucpView {
 			// label16
 			// 
 			this->label16->AutoSize = true;
-			this->label16->Location = System::Drawing::Point(400, 221);
+			this->label16->Location = System::Drawing::Point(401, 226);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(154, 17);
 			this->label16->TabIndex = 34;
@@ -366,7 +371,7 @@ namespace appgrpucpView {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(457, 489);
+			this->button1->Location = System::Drawing::Point(763, 271);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(166, 36);
 			this->button1->TabIndex = 35;
@@ -376,16 +381,15 @@ namespace appgrpucpView {
 			// 
 			// ofdSelectImage
 			// 
-			this->ofdSelectImage->CheckFileExists = false;
-			this->ofdSelectImage->Filter = L"Archivos de mapa de bits|*.BMP |Archivo JPEG|.JPG";
-			this->ofdSelectImage->ShowReadOnly = true;
+			this->ofdSelectImage->Filter = L"Archivo JPEG|*.jpeg|Archivo JPG|*.JPG|Archivo PNG|*.png|Archivo jpg|*.jpg";
 			this->ofdSelectImage->Title = L"Seleccionar Imagen";
+			this->ofdSelectImage->ValidateNames = false;
 			// 
 			// SignForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(773, 537);
+			this->ClientSize = System::Drawing::Size(989, 441);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label16);
 			this->Controls->Add(this->label15);
@@ -418,7 +422,7 @@ namespace appgrpucpView {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Name = L"SignForm";
-			this->Text = L"SignForm";
+			this->Text = L"Registro de Usuario";
 			this->Load += gcnew System::EventHandler(this, &SignForm::SignForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->MyPhoto))->EndInit();
 			this->ResumeLayout(false);

@@ -71,7 +71,7 @@ namespace appgrpucpView {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(47, 32);
+			this->label1->Location = System::Drawing::Point(32, 32);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(57, 17);
 			this->label1->TabIndex = 0;
@@ -80,7 +80,7 @@ namespace appgrpucpView {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(47, 72);
+			this->label2->Location = System::Drawing::Point(32, 72);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(81, 17);
 			this->label2->TabIndex = 1;
@@ -88,21 +88,21 @@ namespace appgrpucpView {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(200, 26);
+			this->textBox1->Location = System::Drawing::Point(185, 26);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(100, 22);
+			this->textBox1->Size = System::Drawing::Size(179, 22);
 			this->textBox1->TabIndex = 2;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(200, 72);
+			this->textBox2->Location = System::Drawing::Point(185, 72);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(100, 22);
+			this->textBox2->Size = System::Drawing::Size(179, 22);
 			this->textBox2->TabIndex = 3;
 			// 
 			// btnLogin
 			// 
-			this->btnLogin->Location = System::Drawing::Point(187, 143);
+			this->btnLogin->Location = System::Drawing::Point(215, 110);
 			this->btnLogin->Name = L"btnLogin";
 			this->btnLogin->Size = System::Drawing::Size(125, 29);
 			this->btnLogin->TabIndex = 4;
@@ -112,7 +112,7 @@ namespace appgrpucpView {
 			// linkForgottenPassword
 			// 
 			this->linkForgottenPassword->AutoSize = true;
-			this->linkForgottenPassword->Location = System::Drawing::Point(172, 209);
+			this->linkForgottenPassword->Location = System::Drawing::Point(200, 176);
 			this->linkForgottenPassword->Name = L"linkForgottenPassword";
 			this->linkForgottenPassword->Size = System::Drawing::Size(150, 17);
 			this->linkForgottenPassword->TabIndex = 5;
@@ -122,7 +122,7 @@ namespace appgrpucpView {
 			// linkRegister
 			// 
 			this->linkRegister->AutoSize = true;
-			this->linkRegister->Location = System::Drawing::Point(213, 192);
+			this->linkRegister->Location = System::Drawing::Point(241, 159);
 			this->linkRegister->Name = L"linkRegister";
 			this->linkRegister->Size = System::Drawing::Size(66, 17);
 			this->linkRegister->TabIndex = 6;
@@ -134,7 +134,7 @@ namespace appgrpucpView {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(382, 242);
+			this->ClientSize = System::Drawing::Size(391, 210);
 			this->Controls->Add(this->linkRegister);
 			this->Controls->Add(this->linkForgottenPassword);
 			this->Controls->Add(this->btnLogin);
@@ -143,7 +143,7 @@ namespace appgrpucpView {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Name = L"LoginForm";
-			this->Text = L"LoginForm";
+			this->Text = L"Inicio de Sesión";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

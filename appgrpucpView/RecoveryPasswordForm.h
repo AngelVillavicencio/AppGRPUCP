@@ -54,7 +54,7 @@ namespace appgrpucpView {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(515, 417);
+			this->ClientSize = System::Drawing::Size(614, 369);
 			this->Name = L"RecoveryPasswordForm";
 			this->Text = L"RecoveryPasswordForm";
 			this->ResumeLayout(false);
