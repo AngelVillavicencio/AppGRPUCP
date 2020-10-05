@@ -1,5 +1,4 @@
 #include "LoginForm.h"
-
 using namespace System;
 using namespace System::Windows::Forms;
 //agregar el espacio de nombres del Controller:
@@ -20,4 +19,13 @@ System::Void appgrpucpView::LoginForm::linkRegister_LinkClicked(System::Object^ 
 {
     SignForm^ registro = gcnew SignForm();
     registro->Show();
+}
+
+System::Void appgrpucpView::LoginForm::btnLogin_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    frmLayout^ ventanaPrincipal = gcnew frmLayout();
+    ventanaPrincipal->Show();
+    
+    
+    return System::Void();
 }

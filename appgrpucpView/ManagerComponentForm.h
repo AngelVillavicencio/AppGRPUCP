@@ -237,8 +237,8 @@ namespace appgrpucpView {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
-			this->Name = L"ManagerComponentForm";
-			this->Text = L"ManagerComponentForm";
+			//this->Name = L"ManagerComponentForm";
+			//this->Text = L"ManagerComponentForm";
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();

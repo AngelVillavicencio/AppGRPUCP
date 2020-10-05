@@ -123,10 +123,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClCompile Include="frmLayout.cpp" />
     <ClCompile Include="frmMeetings.cpp" />
-    <ClCompile Include="frmPrincipal.cpp" />
     <ClCompile Include="frmTalleres.cpp" />
     <ClCompile Include="frmTasks.cpp" />
   </ItemGroup>
@@ -137,8 +135,6 @@
     <ClInclude Include="frmMeetings.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmPrincipal.h">
-=======
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="ManagerComponentForm.cpp" />
     <ClCompile Include="RecoveryPasswordForm.cpp" />
@@ -155,7 +151,6 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="SignForm.h">
->>>>>>> developLogin
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmTalleres.h">
@@ -166,15 +161,11 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <EmbeddedResource Include="frmLayout.resx">
       <DependentUpon>frmLayout.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMeetings.resx">
       <DependentUpon>frmMeetings.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTalleres.resx">
       <DependentUpon>frmTalleres.h</DependentUpon>
@@ -182,7 +173,6 @@
     <EmbeddedResource Include="frmTasks.resx">
       <DependentUpon>frmTasks.h</DependentUpon>
     </EmbeddedResource>
-=======
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.h</DependentUpon>
     </EmbeddedResource>
@@ -203,7 +193,6 @@
     <ProjectReference Include="..\appgrpucpModel\appgrpucpModel.vcxproj">
       <Project>{b95e6eb3-f68e-47c4-8be3-2bf37b4ce419}</Project>
     </ProjectReference>
->>>>>>> developLogin
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
