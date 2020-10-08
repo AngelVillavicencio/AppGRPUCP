@@ -124,12 +124,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="frmLayout.cpp" />
+    <ClCompile Include="frmMantTareas.cpp" />
+    <ClCompile Include="frmMantUsuario.cpp" />
     <ClCompile Include="frmMeetings.cpp" />
     <ClCompile Include="frmTalleres.cpp" />
     <ClCompile Include="frmTasks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmLayout.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantTareas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantUsuario.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMeetings.h">
@@ -163,6 +171,12 @@
   <ItemGroup>
     <EmbeddedResource Include="frmLayout.resx">
       <DependentUpon>frmLayout.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantTareas.resx">
+      <DependentUpon>frmMantTareas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantUsuario.resx">
+      <DependentUpon>frmMantUsuario.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMeetings.resx">
       <DependentUpon>frmMeetings.h</DependentUpon>

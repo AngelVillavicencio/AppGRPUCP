@@ -63,7 +63,7 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::TextBox^ textBox13;
 	private: System::Windows::Forms::Label^ label14;
 	private: System::Windows::Forms::PictureBox^ MyPhoto;
-
+	
 	private: System::Windows::Forms::Label^ label15;
 	private: System::Windows::Forms::Label^ label16;
 	private: System::Windows::Forms::Button^ button1;
