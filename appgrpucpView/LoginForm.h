@@ -165,6 +165,6 @@ namespace appgrpucpView {
 		}
 #pragma endregion
 	private: System::Void linkRegister_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e);
-private: System::Void btnLogin_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnLogin_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }
