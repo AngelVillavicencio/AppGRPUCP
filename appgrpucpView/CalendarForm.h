@@ -8,12 +8,14 @@ namespace appgrpucpView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+	using namespace System::Collections::Generic;
 	/// <summary>
 	/// Resumen de CalendarForm
 	/// </summary>
 	public ref class CalendarForm : public System::Windows::Forms::Form
 	{
+	private: String^ date_;
+	public: List<int>^ fecha = gcnew List<int>();
 	public:
 		CalendarForm(void)
 		{
@@ -21,6 +23,16 @@ namespace appgrpucpView {
 			//
 			//TODO: agregar código de constructor aquí
 			//
+		}
+
+
+		CalendarForm(String^ date)
+		{
+			InitializeComponent();
+			//
+			//TODO: agregar código de constructor aquí
+			//
+			date_ = date;
 		}
 
 	protected:
@@ -87,6 +99,17 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::Panel^ panel26;
 	private: System::Windows::Forms::Panel^ panel25;
 
+
+	private: System::Windows::Forms::Panel^ panel43;
+	private: System::Windows::Forms::Panel^ panel45;
+	private: System::Windows::Forms::Panel^ panel44;
+	private: System::Windows::Forms::Panel^ panel42;
+	private: System::Windows::Forms::Panel^ panel41;
+	private: System::Windows::Forms::Panel^ panel40;
+	private: System::Windows::Forms::Panel^ panel39;
+
+
+
 	private:
 		/// <summary>
 		/// Variable del diseñador necesaria.
@@ -149,6 +172,13 @@ namespace appgrpucpView {
 			this->panel27 = (gcnew System::Windows::Forms::Panel());
 			this->panel26 = (gcnew System::Windows::Forms::Panel());
 			this->panel25 = (gcnew System::Windows::Forms::Panel());
+			this->panel43 = (gcnew System::Windows::Forms::Panel());
+			this->panel45 = (gcnew System::Windows::Forms::Panel());
+			this->panel44 = (gcnew System::Windows::Forms::Panel());
+			this->panel42 = (gcnew System::Windows::Forms::Panel());
+			this->panel41 = (gcnew System::Windows::Forms::Panel());
+			this->panel40 = (gcnew System::Windows::Forms::Panel());
+			this->panel39 = (gcnew System::Windows::Forms::Panel());
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -163,7 +193,7 @@ namespace appgrpucpView {
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel1->Location = System::Drawing::Point(0, 0);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(1064, 77);
+			this->panel1->Size = System::Drawing::Size(1066, 77);
 			this->panel1->TabIndex = 0;
 			// 
 			// labelDate
@@ -183,7 +213,7 @@ namespace appgrpucpView {
 			this->panel2->Controls->Add(this->btnNextMonth);
 			this->panel2->Controls->Add(this->btnPreviousMonth);
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Right;
-			this->panel2->Location = System::Drawing::Point(828, 0);
+			this->panel2->Location = System::Drawing::Point(830, 0);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(234, 75);
 			this->panel2->TabIndex = 0;
@@ -222,7 +252,7 @@ namespace appgrpucpView {
 			this->panel3->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel3->Location = System::Drawing::Point(0, 77);
 			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(1064, 50);
+			this->panel3->Size = System::Drawing::Size(1066, 50);
 			this->panel3->TabIndex = 1;
 			// 
 			// label7
@@ -235,7 +265,7 @@ namespace appgrpucpView {
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(152, 50);
 			this->label7->TabIndex = 8;
-			this->label7->Text = L"Domingo";
+			this->label7->Text = L"Sábado";
 			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label6
@@ -248,7 +278,7 @@ namespace appgrpucpView {
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(152, 50);
 			this->label6->TabIndex = 7;
-			this->label6->Text = L"Sábado";
+			this->label6->Text = L"Viernes";
 			this->label6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label5
@@ -261,7 +291,7 @@ namespace appgrpucpView {
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(152, 50);
 			this->label5->TabIndex = 6;
-			this->label5->Text = L"Viernes";
+			this->label5->Text = L"Jueves";
 			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label4
@@ -274,7 +304,7 @@ namespace appgrpucpView {
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(152, 50);
 			this->label4->TabIndex = 5;
-			this->label4->Text = L"Jueves";
+			this->label4->Text = L"Miércoles";
 			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label3
@@ -287,7 +317,7 @@ namespace appgrpucpView {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(152, 50);
 			this->label3->TabIndex = 4;
-			this->label3->Text = L"Miércoles";
+			this->label3->Text = L"Martes";
 			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label2
@@ -300,7 +330,7 @@ namespace appgrpucpView {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(152, 50);
 			this->label2->TabIndex = 3;
-			this->label2->Text = L"Martes";
+			this->label2->Text = L"Lunes";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label1
@@ -313,7 +343,7 @@ namespace appgrpucpView {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(152, 50);
 			this->label1->TabIndex = 2;
-			this->label1->Text = L"Lunes";
+			this->label1->Text = L"Domingo";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// flowLayoutPanel1
@@ -354,10 +384,17 @@ namespace appgrpucpView {
 			this->flowLayoutPanel1->Controls->Add(this->panel27);
 			this->flowLayoutPanel1->Controls->Add(this->panel26);
 			this->flowLayoutPanel1->Controls->Add(this->panel25);
+			this->flowLayoutPanel1->Controls->Add(this->panel43);
+			this->flowLayoutPanel1->Controls->Add(this->panel45);
+			this->flowLayoutPanel1->Controls->Add(this->panel44);
+			this->flowLayoutPanel1->Controls->Add(this->panel42);
+			this->flowLayoutPanel1->Controls->Add(this->panel41);
+			this->flowLayoutPanel1->Controls->Add(this->panel40);
+			this->flowLayoutPanel1->Controls->Add(this->panel39);
 			this->flowLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->flowLayoutPanel1->Location = System::Drawing::Point(0, 127);
 			this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
-			this->flowLayoutPanel1->Size = System::Drawing::Size(1064, 513);
+			this->flowLayoutPanel1->Size = System::Drawing::Size(1066, 613);
 			this->flowLayoutPanel1->TabIndex = 2;
 			// 
 			// panel6
@@ -434,6 +471,7 @@ namespace appgrpucpView {
 			// 
 			// panel16
 			// 
+			this->panel16->BackColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->panel16->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->panel16->Location = System::Drawing::Point(307, 105);
 			this->panel16->Name = L"panel16";
@@ -640,16 +678,73 @@ namespace appgrpucpView {
 			this->panel25->Size = System::Drawing::Size(146, 96);
 			this->panel25->TabIndex = 17;
 			// 
+			// panel43
+			// 
+			this->panel43->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel43->Location = System::Drawing::Point(3, 513);
+			this->panel43->Name = L"panel43";
+			this->panel43->Size = System::Drawing::Size(146, 96);
+			this->panel43->TabIndex = 28;
+			// 
+			// panel45
+			// 
+			this->panel45->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel45->Location = System::Drawing::Point(155, 513);
+			this->panel45->Name = L"panel45";
+			this->panel45->Size = System::Drawing::Size(146, 96);
+			this->panel45->TabIndex = 26;
+			// 
+			// panel44
+			// 
+			this->panel44->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel44->Location = System::Drawing::Point(307, 513);
+			this->panel44->Name = L"panel44";
+			this->panel44->Size = System::Drawing::Size(146, 96);
+			this->panel44->TabIndex = 30;
+			// 
+			// panel42
+			// 
+			this->panel42->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel42->Location = System::Drawing::Point(459, 513);
+			this->panel42->Name = L"panel42";
+			this->panel42->Size = System::Drawing::Size(146, 96);
+			this->panel42->TabIndex = 27;
+			// 
+			// panel41
+			// 
+			this->panel41->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel41->Location = System::Drawing::Point(611, 513);
+			this->panel41->Name = L"panel41";
+			this->panel41->Size = System::Drawing::Size(146, 96);
+			this->panel41->TabIndex = 24;
+			// 
+			// panel40
+			// 
+			this->panel40->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel40->Location = System::Drawing::Point(763, 513);
+			this->panel40->Name = L"panel40";
+			this->panel40->Size = System::Drawing::Size(146, 96);
+			this->panel40->TabIndex = 25;
+			// 
+			// panel39
+			// 
+			this->panel39->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel39->Location = System::Drawing::Point(915, 513);
+			this->panel39->Name = L"panel39";
+			this->panel39->Size = System::Drawing::Size(146, 96);
+			this->panel39->TabIndex = 29;
+			// 
 			// CalendarForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1064, 640);
+			this->ClientSize = System::Drawing::Size(1066, 740);
 			this->Controls->Add(this->flowLayoutPanel1);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->panel1);
 			this->Name = L"CalendarForm";
 			this->Text = L"CalendarForm";
+			this->Load += gcnew System::EventHandler(this, &CalendarForm::CalendarForm_Load);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			this->panel2->ResumeLayout(false);
@@ -661,5 +756,6 @@ namespace appgrpucpView {
 #pragma endregion
 	private: System::Void btnNextMonth_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void btnPreviousMonth_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void CalendarForm_Load(System::Object^ sender, System::EventArgs^ e);
 };
 }

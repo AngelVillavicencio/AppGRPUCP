@@ -3,6 +3,7 @@
 #include "frmMeetings.h"
 #include "frmTalleres.h"
 #include "CalendarForm.h"
+
 namespace appgrpucpView {
 
 	using namespace System;
@@ -11,6 +12,7 @@ namespace appgrpucpView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Collections::Generic;
 	
 
 	/// <summary>
@@ -27,6 +29,7 @@ namespace appgrpucpView {
 
 	public ref class frmLayout : public System::Windows::Forms::Form
 	{
+	private: String^ date_; //Variable Global que servirá para todas las ventanas
 	public:
 		frmLayout(void)
 		{
@@ -34,6 +37,7 @@ namespace appgrpucpView {
 			//
 			//TODO: agregar código de constructor aquí
 			//
+			
 		}
 
 	protected:
@@ -56,6 +60,9 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::ToolStripMenuItem^ talleresToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ notificacionesToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ dataComponentsToolStripMenuItem;
+	private: System::Windows::Forms::Timer^ timer1;
+	private: System::ComponentModel::IContainer^ components;
+
 	protected:
 
 
@@ -63,7 +70,7 @@ namespace appgrpucpView {
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -72,6 +79,7 @@ namespace appgrpucpView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->components = (gcnew System::ComponentModel::Container());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->perfilToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -81,6 +89,7 @@ namespace appgrpucpView {
 			this->talleresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->notificacionesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->dataComponentsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->panel1->SuspendLayout();
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -91,7 +100,7 @@ namespace appgrpucpView {
 			this->panel1->Controls->Add(this->menuStrip1);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel1->Location = System::Drawing::Point(0, 0);
-			this->panel1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel1->Margin = System::Windows::Forms::Padding(4);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(278, 741);
 			this->panel1->TabIndex = 0;
@@ -110,7 +119,7 @@ namespace appgrpucpView {
 			this->menuStrip1->LayoutStyle = System::Windows::Forms::ToolStripLayoutStyle::VerticalStackWithOverflow;
 			this->menuStrip1->Location = System::Drawing::Point(0, 31);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(254, 597);
+			this->menuStrip1->Size = System::Drawing::Size(252, 573);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			this->menuStrip1->ItemClicked += gcnew System::Windows::Forms::ToolStripItemClickedEventHandler(this, &frmLayout::menuStrip1_ItemClicked);
@@ -176,9 +185,10 @@ namespace appgrpucpView {
 			this->Controls->Add(this->panel1);
 			this->IsMdiContainer = true;
 			this->MainMenuStrip = this->menuStrip1;
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"frmLayout";
 			this->Text = L"frmLayout";
+			this->Load += gcnew System::EventHandler(this, &frmLayout::frmLayout_Load);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			this->menuStrip1->ResumeLayout(false);
@@ -189,26 +199,27 @@ namespace appgrpucpView {
 #pragma endregion
 	private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
 	}
-private: System::Void tasksToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void tasksToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	
-	frmTasks^ tareasVentana = gcnew frmTasks();
-	tareasVentana->MdiParent = this;
-	tareasVentana->Show();
-}
-private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	frmMeetings^ meetingsVentana = gcnew frmMeetings();
-	meetingsVentana->MdiParent = this;
-	meetingsVentana->Show();
-}
-private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	frmTalleres^ talleresVentana = gcnew frmTalleres();
-	talleresVentana->MdiParent = this;
-	talleresVentana->Show();
-}
-private: System::Void yourCalendarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	CalendarForm^ mycalendar = gcnew CalendarForm();
-	mycalendar->MdiParent = this;
-	mycalendar->Show();
-}
+		frmTasks^ tareasVentana = gcnew frmTasks();
+		tareasVentana->MdiParent = this;
+		tareasVentana->Show();
+	}
+	private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmMeetings^ meetingsVentana = gcnew frmMeetings();
+		meetingsVentana->MdiParent = this;
+		meetingsVentana->Show();
+	}
+	private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmTalleres^ talleresVentana = gcnew frmTalleres();
+		talleresVentana->MdiParent = this;
+		talleresVentana->Show();
+	}
+	private: System::Void yourCalendarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		CalendarForm^ mycalendar = gcnew CalendarForm(date_);
+		mycalendar->MdiParent = this;
+		mycalendar->Show();
+	}
+	private: System::Void frmLayout_Load(System::Object^ sender, System::EventArgs^ e);
 };
 }
