@@ -1,4 +1,5 @@
 #pragma once
+#include "Header.h"
 
 namespace appgrpucpView {
 
@@ -9,6 +10,7 @@ namespace appgrpucpView {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace System::Collections::Generic;
+	using namespace antony;
 	/// <summary>
 	/// Resumen de CalendarForm
 	/// </summary>

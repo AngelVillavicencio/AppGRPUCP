@@ -2,6 +2,7 @@
 
 #include "SignForm.h"
 #include "frmLayout.h"
+#include "RecoveryPasswordForm.h"
 namespace appgrpucpView {
 
 	using namespace System;
@@ -130,6 +131,7 @@ namespace appgrpucpView {
 			this->linkForgottenPassword->TabIndex = 5;
 			this->linkForgottenPassword->TabStop = true;
 			this->linkForgottenPassword->Text = L"Olvidó su contraseña\?";
+			this->linkForgottenPassword->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &LoginForm::linkForgottenPassword_LinkClicked);
 			// 
 			// linkRegister
 			// 
@@ -166,5 +168,6 @@ namespace appgrpucpView {
 #pragma endregion
 	private: System::Void linkRegister_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e);
 	private: System::Void btnLogin_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void linkForgottenPassword_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e);
 };
 }

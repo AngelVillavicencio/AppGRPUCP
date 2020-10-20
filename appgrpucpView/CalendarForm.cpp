@@ -7,40 +7,41 @@ System::Void appgrpucpView::CalendarForm::btnNextMonth_Click(System::Object^ sen
     fecha[1] += 1;
     if (fecha[1] == 13) {
         fecha[1] = 1;
+        fecha[2] ++;
     }
     DateTime^ day_selected = DateTime(fecha[2], fecha[1], 1);
     String^ day_name = Convert::ToString(day_selected->DayOfWeek);
     int total_days = DateTime::DaysInMonth(fecha[2], fecha[1]);
+ 
     int day_colum;
     String^ month;
 
+    int firs_day_of_month;
+
     if (day_name->Equals("Sunday")) {
-        day_colum = 0;
+        firs_day_of_month = 0;
     }
     else if (day_name->Equals("Monday")) {
-        day_colum = 1;
+        firs_day_of_month = 1;
     }
     else if (day_name->Equals("Tuesday")) {
-        day_colum = 2;
+        firs_day_of_month = 2;
     }
     else if (day_name->Equals("Wednesday")) {
-        day_colum = 3;
+        firs_day_of_month = 3;
     }
     else if (day_name->Equals("Thursday")) {
-        day_colum = 4;
+        firs_day_of_month = 4;
     }
     else if (day_name->Equals("Friday")) {
-        day_colum = 5;
+        firs_day_of_month = 5;
     }
     else {
-        day_colum = 6;
+        firs_day_of_month = 6;
     }
 
-    int firs_day_of_month = day_colum;
 
-    // MessageBox::Show("dia"+ fecha[0] + " mes" + fecha[1] + " año "+ fecha[2] + "primer dia" + firs_day_of_month);
-
-    for (int i = 0; i < 35; i++) {
+    for (int i = 0; i < 42; i++) {
         flowLayoutPanel1->Controls[i]->BackColor = System::Drawing::SystemColors::ButtonHighlight;
     }
 
@@ -52,6 +53,8 @@ System::Void appgrpucpView::CalendarForm::btnNextMonth_Click(System::Object^ sen
         flowLayoutPanel1->Controls[i]->BackColor = System::Drawing::SystemColors::ButtonFace;
     }
 
+    
+
     if (fecha[1] == 1) {
         month = "Enero";
     }
@@ -90,6 +93,7 @@ System::Void appgrpucpView::CalendarForm::btnNextMonth_Click(System::Object^ sen
     }
 
     labelDate->Text = month + "," + fecha[2];
+    //MessageBox::Show("" + fechas::get_index_first_day());
 }
 
 System::Void appgrpucpView::CalendarForm::btnPreviousMonth_Click(System::Object^ sender, System::EventArgs^ e)
@@ -98,39 +102,38 @@ System::Void appgrpucpView::CalendarForm::btnPreviousMonth_Click(System::Object^
     fecha[1] += - 1 ;
     if (fecha[1] == 0) {
         fecha[1] = 12;
+        fecha[2] += -1;
     }
     DateTime^ day_selected = DateTime(fecha[2], fecha[1], 1);
     String^ day_name = Convert::ToString(day_selected->DayOfWeek);
     int total_days = DateTime::DaysInMonth(fecha[2], fecha[1]);
-    int day_colum;
     String^ month;
 
+    int firs_day_of_month;
+
     if (day_name->Equals("Sunday")) {
-        day_colum = 0;
+        firs_day_of_month = 0;
     }else if (day_name->Equals("Monday")) {
-        day_colum = 1;
+        firs_day_of_month = 1;
     }
     else if (day_name->Equals("Tuesday")) {
-        day_colum = 2;
+        firs_day_of_month = 2;
     }
     else if (day_name->Equals("Wednesday")) {
-        day_colum = 3;
+        firs_day_of_month = 3;
     }
     else if (day_name->Equals("Thursday")) {
-        day_colum = 4;
+        firs_day_of_month = 4;
     }
     else if (day_name->Equals("Friday")) {
-        day_colum = 5;
+        firs_day_of_month = 5;
     }
     else {
-        day_colum = 6;
+        firs_day_of_month = 6;
     }
 
-    int firs_day_of_month = day_colum;
-
-   // MessageBox::Show("dia"+ fecha[0] + " mes" + fecha[1] + " año "+ fecha[2] + "primer dia" + firs_day_of_month);
-
-    for (int i = 0; i < 35; i++) {
+  
+    for (int i = 0; i < 42; i++) {
         flowLayoutPanel1->Controls[i]->BackColor = System::Drawing::SystemColors::ButtonHighlight;
     }
 
@@ -142,6 +145,7 @@ System::Void appgrpucpView::CalendarForm::btnPreviousMonth_Click(System::Object^
         flowLayoutPanel1->Controls[i]->BackColor = System::Drawing::SystemColors::ButtonFace;
     }
 
+
     if (fecha[1] == 1) {
         month = "Enero";
     }
@@ -180,8 +184,7 @@ System::Void appgrpucpView::CalendarForm::btnPreviousMonth_Click(System::Object^
     }
 
     labelDate->Text = month + "," + fecha[2];
-
-
+    MessageBox::Show("" + numerxs());
  
 }
 
