@@ -122,6 +122,7 @@
   <ItemGroup>
     <ClInclude Include="appgrpucpController.h" />
     <ClInclude Include="GestorTareas.h" />
+    <ClInclude Include="GestorUsuario.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
@@ -129,6 +130,7 @@
     <ClCompile Include="appgrpucpController.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="GestorTareas.cpp" />
+    <ClCompile Include="GestorUsuario.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

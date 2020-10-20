@@ -107,7 +107,7 @@ namespace appgrpucpView {
 			this->menuStrip1->LayoutStyle = System::Windows::Forms::ToolStripLayoutStyle::VerticalStackWithOverflow;
 			this->menuStrip1->Location = System::Drawing::Point(0, 25);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(199, 543);
+			this->menuStrip1->Size = System::Drawing::Size(199, 524);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			this->menuStrip1->ItemClicked += gcnew System::Windows::Forms::ToolStripItemClickedEventHandler(this, &frmLayout::menuStrip1_ItemClicked);
