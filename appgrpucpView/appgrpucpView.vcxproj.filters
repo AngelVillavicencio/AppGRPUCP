@@ -39,10 +39,17 @@
     <ClCompile Include="frmTalleres.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="frmMantUsuario.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="frmMantTareas.cpp">
+=======
+    <ClCompile Include="CalendarForm.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Header.cpp">
+>>>>>>> 9877d1ac36d904d5078820b66a8fd1fe22cdd878
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,10 +78,17 @@
     <ClInclude Include="frmTalleres.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="frmMantUsuario.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="frmMantTareas.h">
+=======
+    <ClInclude Include="CalendarForm.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+>>>>>>> 9877d1ac36d904d5078820b66a8fd1fe22cdd878
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

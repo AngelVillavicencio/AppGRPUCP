@@ -16,3 +16,9 @@ void main(array<String^>^ arg)
 }
 
 */
+
+System::Void appgrpucpView::frmLayout::frmLayout_Load(System::Object^ sender, System::EventArgs^ e)
+{
+	date_= Convert::ToString(DateTime::Now.Date);
+
+}
