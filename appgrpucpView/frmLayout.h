@@ -55,6 +55,7 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::ToolStripMenuItem^ talleresToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ notificacionesToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ dataComponentsToolStripMenuItem;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	protected:
 
 
@@ -80,19 +81,23 @@ namespace appgrpucpView {
 			this->talleresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->notificacionesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->dataComponentsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->panel1->SuspendLayout();
 			this->menuStrip1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// panel1
 			// 
 			this->panel1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel1->Controls->Add(this->pictureBox1);
 			this->panel1->Controls->Add(this->menuStrip1);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel1->Location = System::Drawing::Point(0, 0);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(209, 602);
+			this->panel1->Size = System::Drawing::Size(217, 602);
 			this->panel1->TabIndex = 0;
+			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &frmLayout::panel1_Paint);
 			// 
 			// menuStrip1
 			// 
@@ -105,30 +110,30 @@ namespace appgrpucpView {
 					this->notificacionesToolStripMenuItem, this->dataComponentsToolStripMenuItem
 			});
 			this->menuStrip1->LayoutStyle = System::Windows::Forms::ToolStripLayoutStyle::VerticalStackWithOverflow;
-			this->menuStrip1->Location = System::Drawing::Point(0, 25);
+			this->menuStrip1->Location = System::Drawing::Point(8, 176);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(199, 524);
+			this->menuStrip1->Size = System::Drawing::Size(199, 333);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			this->menuStrip1->ItemClicked += gcnew System::Windows::Forms::ToolStripItemClickedEventHandler(this, &frmLayout::menuStrip1_ItemClicked);
 			// 
 			// perfilToolStripMenuItem
 			// 
-			this->perfilToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
+			this->perfilToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->perfilToolStripMenuItem->Name = L"perfilToolStripMenuItem";
 			this->perfilToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->perfilToolStripMenuItem->Text = L"Perfil";
 			// 
 			// yourCalendarToolStripMenuItem
 			// 
-			this->yourCalendarToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
+			this->yourCalendarToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->yourCalendarToolStripMenuItem->Name = L"yourCalendarToolStripMenuItem";
 			this->yourCalendarToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->yourCalendarToolStripMenuItem->Text = L"Your Calendar";
 			// 
 			// tasksToolStripMenuItem
 			// 
-			this->tasksToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
+			this->tasksToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->tasksToolStripMenuItem->Name = L"tasksToolStripMenuItem";
 			this->tasksToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->tasksToolStripMenuItem->Text = L"Tasks";
@@ -136,7 +141,7 @@ namespace appgrpucpView {
 			// 
 			// meetingsToolStripMenuItem
 			// 
-			this->meetingsToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
+			this->meetingsToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->meetingsToolStripMenuItem->Name = L"meetingsToolStripMenuItem";
 			this->meetingsToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->meetingsToolStripMenuItem->Text = L"Meetings";
@@ -144,7 +149,7 @@ namespace appgrpucpView {
 			// 
 			// talleresToolStripMenuItem
 			// 
-			this->talleresToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
+			this->talleresToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->talleresToolStripMenuItem->Name = L"talleresToolStripMenuItem";
 			this->talleresToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->talleresToolStripMenuItem->Text = L"Talleres";
@@ -152,17 +157,25 @@ namespace appgrpucpView {
 			// 
 			// notificacionesToolStripMenuItem
 			// 
-			this->notificacionesToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
+			this->notificacionesToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->notificacionesToolStripMenuItem->Name = L"notificacionesToolStripMenuItem";
 			this->notificacionesToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->notificacionesToolStripMenuItem->Text = L"Notificaciones";
 			// 
 			// dataComponentsToolStripMenuItem
 			// 
-			this->dataComponentsToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
+			this->dataComponentsToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->dataComponentsToolStripMenuItem->Name = L"dataComponentsToolStripMenuItem";
 			this->dataComponentsToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->dataComponentsToolStripMenuItem->Text = L"Data Components";
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Location = System::Drawing::Point(24, 11);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(168, 153);
+			this->pictureBox1->TabIndex = 1;
+			this->pictureBox1->TabStop = false;
 			// 
 			// frmLayout
 			// 
@@ -178,6 +191,7 @@ namespace appgrpucpView {
 			this->panel1->PerformLayout();
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -199,6 +213,8 @@ private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, Sy
 	frmTalleres^ talleresVentana = gcnew frmTalleres();
 	talleresVentana->MdiParent = this;
 	talleresVentana->Show();
+}
+private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 };
 }
