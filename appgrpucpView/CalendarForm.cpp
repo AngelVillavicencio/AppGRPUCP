@@ -1,6 +1,7 @@
 #include "CalendarForm.h"
-
+using namespace System;
 using namespace System::Windows::Forms;
+
 
 System::Void appgrpucpView::CalendarForm::btnNextMonth_Click(System::Object^ sender, System::EventArgs^ e)
 {
@@ -196,3 +197,4 @@ System::Void appgrpucpView::CalendarForm::CalendarForm_Load(System::Object^ send
     fecha->Add(Convert::ToInt16(date_info[2]->Substring(0,4)));
 
 }
+
