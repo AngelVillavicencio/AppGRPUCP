@@ -125,6 +125,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Tarea.h" />
     <ClInclude Include="user.h" />
+    <ClInclude Include="workshop.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="appgrpucpModel.cpp" />
@@ -137,6 +138,7 @@
     </ClCompile>
     <ClCompile Include="Tarea.cpp" />
     <ClCompile Include="user.cpp" />
+    <ClCompile Include="workshop.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />

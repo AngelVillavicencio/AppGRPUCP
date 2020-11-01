@@ -1,4 +1,6 @@
 #include "frmLayout.h"
+#include "frmNotifications.h"
+
 /*
 
 using namespace System;
@@ -16,3 +18,17 @@ void main(array<String^>^ arg)
 }
 
 */
+
+System::Void appgrpucpView::frmLayout::notificacionesToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	frmNotifications^ notificationsVentana = gcnew frmNotifications();
+	notificationsVentana->MdiParent = this;
+	notificationsVentana->Show();
+}
+
+System::Void appgrpucpView::frmLayout::yourCalendarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	/*falta traer el calendar*/
+
+
+}

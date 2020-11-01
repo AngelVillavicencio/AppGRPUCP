@@ -123,16 +123,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="frmCuestionarios.cpp" />
     <ClCompile Include="frmLayout.cpp" />
     <ClCompile Include="frmMantTareas.cpp" />
     <ClCompile Include="frmMantUsuario.cpp" />
     <ClCompile Include="frmMantUsuario1.cpp" />
     <ClCompile Include="frmMeetings.cpp" />
+    <ClCompile Include="frmNotifications.cpp" />
     <ClCompile Include="frmRegistro.cpp" />
     <ClCompile Include="frmTalleres.cpp" />
     <ClCompile Include="frmTasks.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="frmCuestionarios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmLayout.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -154,6 +159,9 @@
     <ClCompile Include="SignForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="frmNotifications.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmRegistro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -177,6 +185,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCuestionarios.resx">
+      <DependentUpon>frmCuestionarios.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLayout.resx">
       <DependentUpon>frmLayout.h</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMeetings.resx">
       <DependentUpon>frmMeetings.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotifications.resx">
+      <DependentUpon>frmNotifications.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistro.resx">
       <DependentUpon>frmRegistro.h</DependentUpon>
