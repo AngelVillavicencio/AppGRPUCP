@@ -21,7 +21,7 @@ void GestorUsuario::agregarUser(user^ objusuario)
 
 		SqlCommand^ query = gcnew SqlCommand();
 		query->Connection = this->conexion;
-		query->CommandText = "insert into Usuario(NAME,EMAIL,USUARIO, CONTRASENA) values('" + objusuario->name + "','" + objusuario->email + "','" + objusuario->usuario + "','" + objusuario->contrasena + "'); ";
+		/*query->CommandText = "insert into Usuario(NAME,EMAIL,USUARIO, CONTRASENA) values('" + objusuario->name + "','" + objusuario->email + "','" + objusuario->usuario + "','" + objusuario->contrasena + "'); ";*/
 		query->ExecuteNonQuery();
 		this->cerrarConexion();
 		

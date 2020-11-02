@@ -123,27 +123,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClCompile Include="frmCuestionarios.cpp" />
-=======
     <ClCompile Include="CalendarForm.cpp" />
->>>>>>> Antony
     <ClCompile Include="frmLayout.cpp" />
     <ClCompile Include="frmMantTareas.cpp" />
     <ClCompile Include="frmMantUsuario.cpp" />
     <ClCompile Include="frmMantUsuario1.cpp" />
     <ClCompile Include="frmMeetings.cpp" />
     <ClCompile Include="frmNotifications.cpp" />
+    <ClCompile Include="frmProfile.cpp" />
     <ClCompile Include="frmRegistro.cpp" />
     <ClCompile Include="frmTalleres.cpp" />
     <ClCompile Include="frmTasks.cpp" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <ClInclude Include="frmCuestionarios.h">
-=======
+    <ClInclude Include="frmCuestionarios.h" />
     <ClInclude Include="CalendarForm.h">
->>>>>>> Antony
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmLayout.h">
@@ -168,16 +163,16 @@
     <ClCompile Include="SignForm.cpp" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClInclude Include="frmNotifications.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmProfile.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmRegistro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-=======
     <ClInclude Include="Header.h" />
->>>>>>> Antony
     <ClInclude Include="LoginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -198,16 +193,15 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <EmbeddedResource Include="frmCuestionarios.resx">
       <DependentUpon>frmCuestionarios.h</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="CalendarForm.resx">
       <DependentUpon>CalendarForm.h</DependentUpon>
->>>>>>> Antony
     </EmbeddedResource>
     <EmbeddedResource Include="frmLayout.resx">
       <DependentUpon>frmLayout.h</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantTareas.resx">
       <DependentUpon>frmMantTareas.h</DependentUpon>
@@ -223,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNotifications.resx">
       <DependentUpon>frmNotifications.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfile.resx">
+      <DependentUpon>frmProfile.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistro.resx">
       <DependentUpon>frmRegistro.h</DependentUpon>

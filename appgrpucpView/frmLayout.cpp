@@ -1,6 +1,8 @@
 #include "frmLayout.h"
 #include "frmNotifications.h"
-
+#include "CalendarForm.h"
+#include "ManagerComponentForm.h"
+#include "frmProfile.h"
 /*
 =======
 
@@ -23,6 +25,15 @@ void main(array<String^>^ arg)
 <<<<<<< HEAD
 */
 
+System::Void appgrpucpView::frmLayout::talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	
+	frmTalleres^ talleresVentana = gcnew frmTalleres();
+	talleresVentana->MdiParent = this;
+	talleresVentana->Show();
+	
+}
+
 System::Void appgrpucpView::frmLayout::notificacionesToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	frmNotifications^ notificationsVentana = gcnew frmNotifications();
@@ -34,6 +45,12 @@ System::Void appgrpucpView::frmLayout::yourCalendarToolStripMenuItem_Click(Syste
 {
 	/*falta traer el calendar*/
 
+
+	CalendarForm^ CalendarVentana = gcnew CalendarForm(date_);
+	CalendarVentana->MdiParent = this;
+	CalendarVentana->Show();
+
+
 }
 
 
@@ -42,4 +59,18 @@ System::Void appgrpucpView::frmLayout::frmLayout_Load(System::Object^ sender, Sy
 	date_= Convert::ToString(DateTime::Now.Date);
 
 
+}
+
+System::Void appgrpucpView::frmLayout::dataComponentsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	ManagerComponentForm^ ManagerComponentVentana = gcnew ManagerComponentForm();
+	ManagerComponentVentana->MdiParent = this;
+	ManagerComponentVentana->Show();
+}
+
+System::Void appgrpucpView::frmLayout::ClickPerfil(System::Object^ sender, System::EventArgs^ e)
+{
+	frmProfile^ ProfileVentana = gcnew frmProfile();
+	ProfileVentana->MdiParent = this;
+	ProfileVentana->Show();
 }

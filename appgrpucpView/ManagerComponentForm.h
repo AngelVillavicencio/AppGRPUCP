@@ -249,7 +249,7 @@ namespace appgrpucpView {
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->Name = L"ManagerComponentForm";
+			//this->Name = L"ManagerComponentForm";
 			this->Text = L"Components";
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
