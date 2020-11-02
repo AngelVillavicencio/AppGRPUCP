@@ -123,7 +123,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="frmCuestionarios.cpp" />
+=======
+    <ClCompile Include="CalendarForm.cpp" />
+>>>>>>> Antony
     <ClCompile Include="frmLayout.cpp" />
     <ClCompile Include="frmMantTareas.cpp" />
     <ClCompile Include="frmMantUsuario.cpp" />
@@ -135,7 +139,11 @@
     <ClCompile Include="frmTasks.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClInclude Include="frmCuestionarios.h">
+=======
+    <ClInclude Include="CalendarForm.h">
+>>>>>>> Antony
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmLayout.h">
@@ -153,18 +161,23 @@
     <ClInclude Include="frmMeetings.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClCompile Include="Header.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="ManagerComponentForm.cpp" />
     <ClCompile Include="RecoveryPasswordForm.cpp" />
     <ClCompile Include="SignForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClInclude Include="frmNotifications.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmRegistro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+=======
+    <ClInclude Include="Header.h" />
+>>>>>>> Antony
     <ClInclude Include="LoginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -185,8 +198,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmCuestionarios.resx">
       <DependentUpon>frmCuestionarios.h</DependentUpon>
+=======
+    <EmbeddedResource Include="CalendarForm.resx">
+      <DependentUpon>CalendarForm.h</DependentUpon>
+>>>>>>> Antony
     </EmbeddedResource>
     <EmbeddedResource Include="frmLayout.resx">
       <DependentUpon>frmLayout.h</DependentUpon>
