@@ -108,7 +108,6 @@ namespace appgrpucpView {
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(232, 602);
 			this->panel1->TabIndex = 0;
-			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &frmLayout::panel1_Paint);
 			// 
 			// pictureBox1
 			// 
@@ -200,42 +199,15 @@ namespace appgrpucpView {
 #pragma endregion
 	
 /*<<<<<<< HEAD*/
-	frmTasks^ tareasVentana = gcnew frmTasks();
+	/*frmTasks^ tareasVentana = gcnew frmTasks();
 	tareasVentana->MdiParent = this;
 	tareasVentana->Show();
-}
-private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	frmMeetings^ meetingsVentana = gcnew frmMeetings();
-	meetingsVentana->MdiParent = this;
-	meetingsVentana->Show();
-}
-private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e); 
-private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-}
+}*/
+private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void notificacionesToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void yourCalendarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
-/*=======
-		frmTasks^ tareasVentana = gcnew frmTasks();
-		tareasVentana->MdiParent = this;
-		tareasVentana->Show();
-	}
-	private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		frmMeetings^ meetingsVentana = gcnew frmMeetings();
-		meetingsVentana->MdiParent = this;
-		meetingsVentana->Show();
-	}
-	private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		frmTalleres^ talleresVentana = gcnew frmTalleres();
-		talleresVentana->MdiParent = this;
-		talleresVentana->Show();
-	}
-	private: System::Void yourCalendarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		CalendarForm^ mycalendar = gcnew CalendarForm(date_);
-		mycalendar->MdiParent = this;
-		mycalendar->Show();
-	}*/
-	private: System::Void frmLayout_Load(System::Object^ sender, System::EventArgs^ e);
-
+private: System::Void frmLayout_Load(System::Object^ sender, System::EventArgs^ e);
 private: System::Void dataComponentsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void ClickPerfil(System::Object^ sender, System::EventArgs^ e);
 };

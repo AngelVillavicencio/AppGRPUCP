@@ -25,14 +25,7 @@ void main(array<String^>^ arg)
 <<<<<<< HEAD
 */
 
-System::Void appgrpucpView::frmLayout::talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-{
-	
-	frmTalleres^ talleresVentana = gcnew frmTalleres();
-	talleresVentana->MdiParent = this;
-	talleresVentana->Show();
-	
-}
+
 
 System::Void appgrpucpView::frmLayout::notificacionesToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
@@ -41,23 +34,15 @@ System::Void appgrpucpView::frmLayout::notificacionesToolStripMenuItem_Click(Sys
 	notificationsVentana->Show();
 }
 
-System::Void appgrpucpView::frmLayout::yourCalendarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-{
-	/*falta traer el calendar*/
 
 
-	CalendarForm^ CalendarVentana = gcnew CalendarForm(date_);
-	CalendarVentana->MdiParent = this;
-	CalendarVentana->Show();
-}
-
-
+/*
 System::Void appgrpucpView::frmLayout::tasksToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	frmTasks^ tareasVentana = gcnew frmTasks();
 	tareasVentana->MdiParent = this;
 	tareasVentana->Show();
-}
+}*/
 
 System::Void appgrpucpView::frmLayout::meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {

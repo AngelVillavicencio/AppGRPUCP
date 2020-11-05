@@ -95,6 +95,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -128,13 +129,9 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Tarea.h" />
     <ClInclude Include="user.h" />
-<<<<<<< HEAD
     <ClInclude Include="workshop.h" />
-=======
     <ClInclude Include="Session.h" />
     <ClInclude Include="Supplies.h" />
-
->>>>>>> Antony
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="appgrpucpModel.cpp" />
@@ -148,14 +145,11 @@
     </ClCompile>
     <ClCompile Include="Tarea.cpp" />
     <ClCompile Include="user.cpp" />
-<<<<<<< HEAD
     <ClCompile Include="workshop.cpp" />
-=======
     <ClCompile Include="Projects.cpp" />
     <ClCompile Include="Providers.cpp" />
     <ClCompile Include="Session.cpp" />
     <ClCompile Include="Supplies.cpp" />
->>>>>>> Antony
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />
