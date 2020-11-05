@@ -48,8 +48,12 @@
     <ClCompile Include="CalendarForm.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Header.cpp">
 >>>>>>> 9877d1ac36d904d5078820b66a8fd1fe22cdd878
+=======
+    <ClCompile Include="Antony.cpp">
+>>>>>>> 18b8cab47a3cc7264534f5ad8a784ddaea490c48
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -87,8 +91,12 @@
     <ClInclude Include="CalendarForm.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Header.h">
 >>>>>>> 9877d1ac36d904d5078820b66a8fd1fe22cdd878
+=======
+    <ClInclude Include="Antony.h">
+>>>>>>> 18b8cab47a3cc7264534f5ad8a784ddaea490c48
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

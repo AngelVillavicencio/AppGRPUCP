@@ -37,7 +37,7 @@ namespace appgrpucpView {
 			//
 			//TODO: agregar código de constructor aquí
 			//
-			
+
 		}
 
 	protected:
@@ -122,7 +122,7 @@ namespace appgrpucpView {
 			this->menuStrip1->Size = System::Drawing::Size(252, 573);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
-			this->menuStrip1->ItemClicked += gcnew System::Windows::Forms::ToolStripItemClickedEventHandler(this, &frmLayout::menuStrip1_ItemClicked);
+			
 			// 
 			// perfilToolStripMenuItem
 			// 
@@ -197,29 +197,11 @@ namespace appgrpucpView {
 
 		}
 #pragma endregion
-	private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
-	}
-	private: System::Void tasksToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	
-		frmTasks^ tareasVentana = gcnew frmTasks();
-		tareasVentana->MdiParent = this;
-		tareasVentana->Show();
-	}
-	private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		frmMeetings^ meetingsVentana = gcnew frmMeetings();
-		meetingsVentana->MdiParent = this;
-		meetingsVentana->Show();
-	}
-	private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		frmTalleres^ talleresVentana = gcnew frmTalleres();
-		talleresVentana->MdiParent = this;
-		talleresVentana->Show();
-	}
-	private: System::Void yourCalendarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		CalendarForm^ mycalendar = gcnew CalendarForm(date_);
-		mycalendar->MdiParent = this;
-		mycalendar->Show();
-	}
+	private: System::Void tasksToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void yourCalendarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void frmLayout_Load(System::Object^ sender, System::EventArgs^ e);
 };
 }
