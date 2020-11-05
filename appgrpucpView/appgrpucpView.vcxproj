@@ -123,6 +123,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Antony.cpp" />
     <ClCompile Include="CalendarForm.cpp" />
     <ClCompile Include="frmLayout.cpp" />
     <ClCompile Include="frmMeetings.cpp" />
@@ -130,6 +131,7 @@
     <ClCompile Include="frmTasks.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Antony.h" />
     <ClInclude Include="CalendarForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -139,14 +141,12 @@
     <ClInclude Include="frmMeetings.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClCompile Include="Header.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="ManagerComponentForm.cpp" />
     <ClCompile Include="RecoveryPasswordForm.cpp" />
     <ClCompile Include="SignForm.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h" />
     <ClInclude Include="LoginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

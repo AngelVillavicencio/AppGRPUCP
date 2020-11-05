@@ -42,7 +42,7 @@
     <ClCompile Include="CalendarForm.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Header.cpp">
+    <ClCompile Include="Antony.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,7 +74,7 @@
     <ClInclude Include="CalendarForm.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
+    <ClInclude Include="Antony.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
