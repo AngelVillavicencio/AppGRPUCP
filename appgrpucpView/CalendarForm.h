@@ -1,5 +1,5 @@
 #pragma once
-#include "Header.h"
+#include "Antony.h"
 
 namespace appgrpucpView {
 
@@ -10,7 +10,7 @@ namespace appgrpucpView {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace System::Collections::Generic;
-	using namespace antony;
+	using namespace date_process;
 	/// <summary>
 	/// Resumen de CalendarForm
 	/// </summary>
@@ -759,5 +759,6 @@ namespace appgrpucpView {
 	private: System::Void btnNextMonth_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void btnPreviousMonth_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void CalendarForm_Load(System::Object^ sender, System::EventArgs^ e);
+	private: void refresh_calendar();
 };
 }

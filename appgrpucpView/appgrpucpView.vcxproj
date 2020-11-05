@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="frmCuestionarios.cpp" />
+    <ClCompile Include="Antony.cpp" />
     <ClCompile Include="CalendarForm.cpp" />
     <ClCompile Include="frmLayout.cpp" />
     <ClCompile Include="frmMantTareas.cpp" />
@@ -138,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmCuestionarios.h" />
+    <ClInclude Include="Antony.h" />
     <ClInclude Include="CalendarForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -156,7 +158,6 @@
     <ClInclude Include="frmMeetings.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClCompile Include="Header.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="ManagerComponentForm.cpp" />
     <ClCompile Include="RecoveryPasswordForm.cpp" />

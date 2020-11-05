@@ -24,10 +24,25 @@
     <ClInclude Include="pch.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+
     <ClInclude Include="Tarea.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="user.h">
+
+    <ClInclude Include="Inscription_detail.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Projects.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Supplies.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Providers.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="workshop.h">
@@ -48,6 +63,19 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="user.cpp">
+    <ClCompile Include="Inscription_detail.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Session.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Projects.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Supplies.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Providers.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="workshop.cpp">

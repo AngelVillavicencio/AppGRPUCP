@@ -37,7 +37,7 @@ namespace appgrpucpView {
 			//
 			//TODO: agregar código de constructor aquí
 			//
-			
+
 		}
 
 	protected:
@@ -136,7 +136,7 @@ namespace appgrpucpView {
 			this->menuStrip1->Size = System::Drawing::Size(197, 245);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
-			this->menuStrip1->ItemClicked += gcnew System::Windows::Forms::ToolStripItemClickedEventHandler(this, &frmLayout::menuStrip1_ItemClicked);
+			
 			// 
 			// yourCalendarToolStripMenuItem
 			// 
@@ -198,9 +198,6 @@ namespace appgrpucpView {
 
 		}
 #pragma endregion
-	private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
-	}
-	private: System::Void tasksToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	
 /*<<<<<<< HEAD*/
 	frmTasks^ tareasVentana = gcnew frmTasks();
