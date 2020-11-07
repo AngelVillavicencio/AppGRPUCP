@@ -6,11 +6,12 @@ using namespace System::Collections::Generic;
 namespace appgrpucpModel {
 	public ref class Session
 	{
-		property long Id;
-		property long Principal_Id;
-		property DateTime^ Dates;
+		property int Id;
+		property int Principal_Id;
+		property DateTime^ Date;
 		property float Duration;
-		property List<long>^ Assistant_Advisers;
+		property List<int>^ Assistant_Advisers;
+		property List<int>^ Assistant_students;
 		property String^ Observations;
 		property List<String^>^ Requirements;
 

@@ -7,11 +7,11 @@ using namespace System::Collections::Generic;
 namespace appgrpucpModel {
 	public ref class Projects
 	{
-		property String^ Id;
+		property int Id;
 		property String^ Name;
 		property String^ Description;
-		property DateTime^ TimeInit;
-		property DateTime^ TimeEnd;
+		property DateTime^ DateInit;
+		property DateTime^ DateEnd;
 		property double Invertion;
 		property List<Supplies^>^ Supply;
 	};
