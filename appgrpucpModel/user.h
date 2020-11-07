@@ -27,8 +27,8 @@ namespace appgrpucpModel
 		
 	public:
 		/*constructores*/
-		user(int id, String^ name, String^ email, String^ usuario, String^ contrasena); // mostrar
-		user(String^ name, String^ email, String^ usuario, String^ contrasena);// create
+		user(int id, String^ name, String^ email, String^ usuario, String^ password); // mostrar
+		user(String^ name, String^ email, String^ usuario, String^ password);// create
 	};
 
 

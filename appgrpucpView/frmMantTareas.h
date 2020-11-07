@@ -48,7 +48,7 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Button^ button5;
+
 
 	private:
 		/// <summary>
@@ -73,7 +73,6 @@ namespace appgrpucpView {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->button5 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -159,22 +158,11 @@ namespace appgrpucpView {
 			this->label1->TabIndex = 6;
 			this->label1->Text = L"Descripción de la tarea";
 			// 
-			// button5
-			// 
-			this->button5->Location = System::Drawing::Point(415, 92);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(75, 23);
-			this->button5->TabIndex = 7;
-			this->button5->Text = L"button5";
-			this->button5->UseVisualStyleBackColor = true;
-			this->button5->Click += gcnew System::EventHandler(this, &frmMantTareas::button5_Click);
-			// 
 			// frmMantTareas
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(941, 561);
-			this->Controls->Add(this->button5);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->button4);

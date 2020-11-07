@@ -1,33 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="frmCuestionarios.cpp" />
     <ClCompile Include="Antony.cpp" />
     <ClCompile Include="CalendarForm.cpp" />
     <ClCompile Include="frmLayout.cpp" />
     <ClCompile Include="frmMantTareas.cpp" />
     <ClCompile Include="frmMantUsuario.cpp" />
-    <ClCompile Include="frmMantUsuario1.cpp" />
-    <ClCompile Include="frmMeetings.cpp" />
     <ClCompile Include="frmNotifications.cpp" />
     <ClCompile Include="frmProfile.cpp" />
     <ClCompile Include="frmRegistro.cpp" />
     <ClCompile Include="frmTalleres.cpp" />
-    <ClCompile Include="frmTasks.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="ManagerComponentForm.cpp" />
     <ClCompile Include="RecoveryPasswordForm.cpp" />
     <ClCompile Include="SignForm.cpp" />
+    <ClCompile Include="frmComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="frmCuestionarios.h" />
     <ClInclude Include="Antony.h" />
     <ClInclude Include="CalendarForm.h" />
     <ClInclude Include="frmLayout.h" />
     <ClInclude Include="frmMantTareas.h" />
     <ClInclude Include="frmMantUsuario.h" />
-    <ClInclude Include="frmMantUsuario1.h" />
-    <ClInclude Include="frmMeetings.h" />
     <ClInclude Include="frmNotifications.h" />
     <ClInclude Include="frmProfile.h" />
     <ClInclude Include="frmRegistro.h" />
@@ -37,6 +31,6 @@
     <ClInclude Include="RecoveryPasswordForm.h" />
     <ClInclude Include="SignForm.h" />
     <ClInclude Include="frmTalleres.h" />
-    <ClInclude Include="frmTasks.h" />
+    <ClInclude Include="frmComponent.h" />
   </ItemGroup>
 </Project>

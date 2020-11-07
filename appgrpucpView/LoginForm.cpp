@@ -1,7 +1,8 @@
 #include "LoginForm.h"
-/*using namespace System;
+using namespace System;
 using namespace System::Windows::Forms;
-//agregar el espacio de nombres del Controller:
+/*/agregar el espacio de nombres del Controller:
+*/
 
 [STAThread]
 
@@ -12,7 +13,7 @@ void main(array<String^>^ arg)
     //XXXXXXXXXXX es el nombre del proyecto
     appgrpucpView::LoginForm form;
     Application::Run(% form);
-}*/
+}
 
 
 System::Void appgrpucpView::LoginForm::linkRegister_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e)

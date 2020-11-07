@@ -1,6 +1,6 @@
 #pragma once
-#include "frmTasks.h"
-#include "frmMeetings.h"
+
+
 #include "frmTalleres.h"
 #include "CalendarForm.h"
 
@@ -64,6 +64,11 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 	private: System::Windows::Forms::Timer^ timer1;
+	private: System::Windows::Forms::Panel^ panel2;
+
+
+
+
 	private: System::ComponentModel::IContainer^ components;
 
 
@@ -93,6 +98,7 @@ namespace appgrpucpView {
 			this->dataComponentsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->perfilToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->menuStrip1->SuspendLayout();
@@ -100,6 +106,8 @@ namespace appgrpucpView {
 			// 
 			// panel1
 			// 
+			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(23)),
+				static_cast<System::Int32>(static_cast<System::Byte>(31)));
 			this->panel1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->panel1->Controls->Add(this->pictureBox1);
 			this->panel1->Controls->Add(this->menuStrip1);
@@ -111,15 +119,18 @@ namespace appgrpucpView {
 			// 
 			// pictureBox1
 			// 
-			this->pictureBox1->Location = System::Drawing::Point(56, 10);
+			this->pictureBox1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->pictureBox1->Location = System::Drawing::Point(20, 10);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(126, 124);
+			this->pictureBox1->Size = System::Drawing::Size(195, 188);
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
 			// 
 			// menuStrip1
 			// 
+			this->menuStrip1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(23)),
+				static_cast<System::Int32>(static_cast<System::Byte>(31)));
 			this->menuStrip1->Dock = System::Windows::Forms::DockStyle::None;
 			this->menuStrip1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
@@ -129,16 +140,16 @@ namespace appgrpucpView {
 					this->notificacionesToolStripMenuItem, this->talleresToolStripMenuItem, this->dataComponentsToolStripMenuItem, this->perfilToolStripMenuItem
 			});
 			this->menuStrip1->LayoutStyle = System::Windows::Forms::ToolStripLayoutStyle::VerticalStackWithOverflow;
-			this->menuStrip1->Location = System::Drawing::Point(8, 159);
+			this->menuStrip1->Location = System::Drawing::Point(18, 210);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->Padding = System::Windows::Forms::Padding(4, 2, 0, 2);
-			this->menuStrip1->Size = System::Drawing::Size(197, 245);
+			this->menuStrip1->Size = System::Drawing::Size(197, 226);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
-			
 			// 
 			// yourCalendarToolStripMenuItem
 			// 
+			this->yourCalendarToolStripMenuItem->ForeColor = System::Drawing::Color::White;
 			this->yourCalendarToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->yourCalendarToolStripMenuItem->Name = L"yourCalendarToolStripMenuItem";
 			this->yourCalendarToolStripMenuItem->Size = System::Drawing::Size(192, 34);
@@ -147,6 +158,7 @@ namespace appgrpucpView {
 			// 
 			// notificacionesToolStripMenuItem
 			// 
+			this->notificacionesToolStripMenuItem->ForeColor = System::Drawing::Color::White;
 			this->notificacionesToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->notificacionesToolStripMenuItem->Name = L"notificacionesToolStripMenuItem";
 			this->notificacionesToolStripMenuItem->Size = System::Drawing::Size(192, 34);
@@ -155,6 +167,7 @@ namespace appgrpucpView {
 			// 
 			// talleresToolStripMenuItem
 			// 
+			this->talleresToolStripMenuItem->ForeColor = System::Drawing::Color::White;
 			this->talleresToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->talleresToolStripMenuItem->Name = L"talleresToolStripMenuItem";
 			this->talleresToolStripMenuItem->Size = System::Drawing::Size(192, 34);
@@ -163,6 +176,7 @@ namespace appgrpucpView {
 			// 
 			// dataComponentsToolStripMenuItem
 			// 
+			this->dataComponentsToolStripMenuItem->ForeColor = System::Drawing::Color::White;
 			this->dataComponentsToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->dataComponentsToolStripMenuItem->Name = L"dataComponentsToolStripMenuItem";
 			this->dataComponentsToolStripMenuItem->Size = System::Drawing::Size(192, 34);
@@ -171,22 +185,37 @@ namespace appgrpucpView {
 			// 
 			// perfilToolStripMenuItem
 			// 
+			this->perfilToolStripMenuItem->ForeColor = System::Drawing::Color::White;
 			this->perfilToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 5, 0, 5);
 			this->perfilToolStripMenuItem->Name = L"perfilToolStripMenuItem";
 			this->perfilToolStripMenuItem->Size = System::Drawing::Size(192, 34);
 			this->perfilToolStripMenuItem->Text = L"Perfil";
 			this->perfilToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmLayout::ClickPerfil);
 			// 
+			// panel2
+			// 
+			this->panel2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(23)),
+				static_cast<System::Int32>(static_cast<System::Byte>(31)));
+			this->panel2->Dock = System::Windows::Forms::DockStyle::Top;
+			this->panel2->Location = System::Drawing::Point(232, 0);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(949, 30);
+			this->panel2->TabIndex = 2;
+			// 
 			// frmLayout
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(23)),
+				static_cast<System::Int32>(static_cast<System::Byte>(31)));
 			this->ClientSize = System::Drawing::Size(1181, 602);
+			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->IsMdiContainer = true;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"frmLayout";
-			this->Text = L"frmLayout";
+			this->Text = L"Inicio";
+			this->TransparencyKey = System::Drawing::Color::White;
 			this->Load += gcnew System::EventHandler(this, &frmLayout::frmLayout_Load);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
@@ -203,7 +232,7 @@ namespace appgrpucpView {
 	tareasVentana->MdiParent = this;
 	tareasVentana->Show();
 }*/
-private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+//private: System::Void meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void notificacionesToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void yourCalendarToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);

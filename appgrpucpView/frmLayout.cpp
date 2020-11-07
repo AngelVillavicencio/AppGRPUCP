@@ -11,7 +11,7 @@
 using namespace System;
 using namespace System::Windows::Forms;
 //agregar el espacio de nombres del Controller:
-
+/*
 [STAThread]
 
 void main(array<String^>^ arg)
@@ -20,7 +20,7 @@ void main(array<String^>^ arg)
 	Application::SetCompatibleTextRenderingDefault(false);
 	appgrpucpView::frmLayout form;
 	Application::Run(% form);
-}
+}*/
 /*
 <<<<<<< HEAD
 */
@@ -44,12 +44,12 @@ System::Void appgrpucpView::frmLayout::tasksToolStripMenuItem_Click(System::Obje
 	tareasVentana->Show();
 }*/
 
-System::Void appgrpucpView::frmLayout::meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+/*System::Void appgrpucpView::frmLayout::meetingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	frmMeetings^ meetingsVentana = gcnew frmMeetings();
 	meetingsVentana->MdiParent = this;
 	meetingsVentana->Show();
-}
+}*/
 
 System::Void appgrpucpView::frmLayout::talleresToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {

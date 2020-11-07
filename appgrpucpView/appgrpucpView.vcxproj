@@ -123,24 +123,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="frmCuestionarios.cpp" />
     <ClCompile Include="Antony.cpp" />
     <ClCompile Include="CalendarForm.cpp" />
+    <ClCompile Include="frmComponent.cpp" />
     <ClCompile Include="frmLayout.cpp" />
     <ClCompile Include="frmMantTareas.cpp" />
     <ClCompile Include="frmMantUsuario.cpp" />
-    <ClCompile Include="frmMantUsuario1.cpp" />
-    <ClCompile Include="frmMeetings.cpp" />
     <ClCompile Include="frmNotifications.cpp" />
     <ClCompile Include="frmProfile.cpp" />
     <ClCompile Include="frmRegistro.cpp" />
     <ClCompile Include="frmTalleres.cpp" />
-    <ClCompile Include="frmTasks.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="frmCuestionarios.h" />
     <ClInclude Include="Antony.h" />
     <ClInclude Include="CalendarForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmComponent.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmLayout.h">
@@ -150,12 +149,6 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMantUsuario.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantUsuario1.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMeetings.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClCompile Include="LoginForm.cpp" />
@@ -189,16 +182,13 @@
     <ClInclude Include="frmTalleres.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmTasks.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmCuestionarios.resx">
-      <DependentUpon>frmCuestionarios.h</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CalendarForm.resx">
       <DependentUpon>CalendarForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComponent.resx">
+      <DependentUpon>frmComponent.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLayout.resx">
       <DependentUpon>frmLayout.h</DependentUpon>
@@ -209,12 +199,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantUsuario.resx">
       <DependentUpon>frmMantUsuario.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMantUsuario1.resx">
-      <DependentUpon>frmMantUsuario1.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMeetings.resx">
-      <DependentUpon>frmMeetings.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNotifications.resx">
       <DependentUpon>frmNotifications.h</DependentUpon>
@@ -227,9 +211,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTalleres.resx">
       <DependentUpon>frmTalleres.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTasks.resx">
-      <DependentUpon>frmTasks.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.h</DependentUpon>
