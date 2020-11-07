@@ -36,9 +36,9 @@ namespace appgrpucpView {
 		}
 	private: System::Windows::Forms::TextBox^ textBox1;
 	protected:
-	private: System::Windows::Forms::TextBox^ textBox2;
+
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Label^ label2;
+
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::RadioButton^ radioButton1;
 	private: System::Windows::Forms::RadioButton^ radioButton2;
@@ -58,11 +58,11 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ DateUpdated;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Price;
 	private: System::Windows::Forms::DataGridView^ dataGridView2;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Precio;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column4;
+
+
+
+
+
 
 
 
@@ -76,6 +76,15 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::ToolStripButton^ toolStripButton2;
 	private: System::Windows::Forms::ToolStripButton^ toolStripButton3;
 	private: System::Windows::Forms::Label^ label4;
+
+	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column5;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Precio;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column4;
 
 
 
@@ -97,9 +106,7 @@ namespace appgrpucpView {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ManagerComponentForm::typeid));
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
@@ -113,19 +120,22 @@ namespace appgrpucpView {
 			this->DateUpdated = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Price = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
-			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Precio = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->toolStrip1 = (gcnew System::Windows::Forms::ToolStrip());
 			this->toolStripButton1 = (gcnew System::Windows::Forms::ToolStripButton());
 			this->toolStripButton2 = (gcnew System::Windows::Forms::ToolStripButton());
 			this->toolStripButton3 = (gcnew System::Windows::Forms::ToolStripButton());
-			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Precio = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
@@ -135,44 +145,26 @@ namespace appgrpucpView {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(194, 33);
+			this->textBox1->Location = System::Drawing::Point(196, 42);
 			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(208, 20);
+			this->textBox1->Size = System::Drawing::Size(333, 20);
 			this->textBox1->TabIndex = 0;
-			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(194, 61);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(208, 20);
-			this->textBox2->TabIndex = 1;
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(53, 36);
+			this->label1->Location = System::Drawing::Point(55, 42);
 			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(44, 13);
 			this->label1->TabIndex = 3;
 			this->label1->Text = L"Nombre";
 			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(53, 64);
-			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(63, 13);
-			this->label2->TabIndex = 4;
-			this->label2->Text = L"Descripción";
-			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(53, 125);
+			this->label3->Location = System::Drawing::Point(55, 92);
 			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(94, 13);
@@ -182,7 +174,7 @@ namespace appgrpucpView {
 			// radioButton1
 			// 
 			this->radioButton1->AutoSize = true;
-			this->radioButton1->Location = System::Drawing::Point(194, 121);
+			this->radioButton1->Location = System::Drawing::Point(196, 88);
 			this->radioButton1->Margin = System::Windows::Forms::Padding(2);
 			this->radioButton1->Name = L"radioButton1";
 			this->radioButton1->Size = System::Drawing::Size(73, 17);
@@ -194,7 +186,7 @@ namespace appgrpucpView {
 			// radioButton2
 			// 
 			this->radioButton2->AutoSize = true;
-			this->radioButton2->Location = System::Drawing::Point(194, 146);
+			this->radioButton2->Location = System::Drawing::Point(196, 113);
 			this->radioButton2->Margin = System::Windows::Forms::Padding(2);
 			this->radioButton2->Name = L"radioButton2";
 			this->radioButton2->Size = System::Drawing::Size(108, 17);
@@ -214,8 +206,6 @@ namespace appgrpucpView {
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Controls->Add(this->textBox1);
 			this->groupBox1->Controls->Add(this->label3);
-			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Controls->Add(this->textBox2);
 			this->groupBox1->Location = System::Drawing::Point(48, 54);
 			this->groupBox1->Margin = System::Windows::Forms::Padding(2);
 			this->groupBox1->Name = L"groupBox1";
@@ -224,10 +214,11 @@ namespace appgrpucpView {
 			this->groupBox1->TabIndex = 8;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Búsqueda";
+			this->groupBox1->Enter += gcnew System::EventHandler(this, &ManagerComponentForm::groupBox1_Enter);
 			// 
 			// button5
 			// 
-			this->button5->Location = System::Drawing::Point(676, 239);
+			this->button5->Location = System::Drawing::Point(676, 199);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(98, 35);
 			this->button5->TabIndex = 10;
@@ -236,7 +227,7 @@ namespace appgrpucpView {
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(502, 137);
+			this->button4->Location = System::Drawing::Point(588, 85);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(93, 26);
 			this->button4->TabIndex = 9;
@@ -246,7 +237,7 @@ namespace appgrpucpView {
 			// comboBox1
 			// 
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(271, 120);
+			this->comboBox1->Location = System::Drawing::Point(321, 92);
 			this->comboBox1->Margin = System::Windows::Forms::Padding(2);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(208, 21);
@@ -259,7 +250,7 @@ namespace appgrpucpView {
 				this->Name, this->Store,
 					this->DateUpdated, this->Price
 			});
-			this->dataGridView1->Location = System::Drawing::Point(56, 190);
+			this->dataGridView1->Location = System::Drawing::Point(56, 150);
 			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 51;
@@ -298,49 +289,20 @@ namespace appgrpucpView {
 			// dataGridView2
 			// 
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView2->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(5) {
+			this->dataGridView2->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(6) {
 				this->Column1,
-					this->Column2, this->Precio, this->Column3, this->Column4
+					this->Column2, this->Column5, this->Precio, this->Column3, this->Column4
 			});
-			this->dataGridView2->Location = System::Drawing::Point(56, 48);
+			this->dataGridView2->Location = System::Drawing::Point(17, 79);
 			this->dataGridView2->Name = L"dataGridView2";
 			this->dataGridView2->ReadOnly = true;
-			this->dataGridView2->Size = System::Drawing::Size(600, 120);
+			this->dataGridView2->Size = System::Drawing::Size(653, 120);
 			this->dataGridView2->TabIndex = 13;
-			// 
-			// Column1
-			// 
-			this->Column1->AutoSizeMode = System::Windows::Forms::DataGridViewAutoSizeColumnMode::Fill;
-			this->Column1->HeaderText = L"Nombre";
-			this->Column1->Name = L"Column1";
-			this->Column1->ReadOnly = true;
-			// 
-			// Column2
-			// 
-			this->Column2->HeaderText = L"Tienda";
-			this->Column2->Name = L"Column2";
-			this->Column2->ReadOnly = true;
-			// 
-			// Precio
-			// 
-			this->Precio->HeaderText = L"Precio";
-			this->Precio->Name = L"Precio";
-			this->Precio->ReadOnly = true;
-			// 
-			// Column3
-			// 
-			this->Column3->HeaderText = L"Cantidad";
-			this->Column3->Name = L"Column3";
-			this->Column3->ReadOnly = true;
-			// 
-			// Column4
-			// 
-			this->Column4->HeaderText = L"Subtotal";
-			this->Column4->Name = L"Column4";
-			this->Column4->ReadOnly = true;
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Controls->Add(this->textBox4);
+			this->groupBox2->Controls->Add(this->label5);
 			this->groupBox2->Controls->Add(this->label4);
 			this->groupBox2->Controls->Add(this->textBox3);
 			this->groupBox2->Controls->Add(this->button1);
@@ -352,16 +314,25 @@ namespace appgrpucpView {
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"Haciendo mi lista";
 			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(531, 208);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(34, 13);
+			this->label4->TabIndex = 17;
+			this->label4->Text = L"Total:";
+			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(557, 174);
+			this->textBox3->Location = System::Drawing::Point(571, 205);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(99, 20);
 			this->textBox3->TabIndex = 16;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(676, 95);
+			this->button1->Location = System::Drawing::Point(676, 126);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 38);
 			this->button1->TabIndex = 14;
@@ -410,14 +381,60 @@ namespace appgrpucpView {
 			this->toolStripButton3->Size = System::Drawing::Size(125, 22);
 			this->toolStripButton3->Text = L"Eliminar componente";
 			// 
-			// label4
+			// label5
 			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(517, 177);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(34, 13);
-			this->label4->TabIndex = 17;
-			this->label4->Text = L"Total:";
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(53, 42);
+			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(92, 13);
+			this->label5->TabIndex = 18;
+			this->label5->Text = L"Nombre de tu lista";
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(170, 39);
+			this->textBox4->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(208, 20);
+			this->textBox4->TabIndex = 11;
+			// 
+			// Column1
+			// 
+			this->Column1->AutoSizeMode = System::Windows::Forms::DataGridViewAutoSizeColumnMode::Fill;
+			this->Column1->HeaderText = L"Nombre";
+			this->Column1->Name = L"Column1";
+			this->Column1->ReadOnly = true;
+			// 
+			// Column2
+			// 
+			this->Column2->HeaderText = L"Tienda";
+			this->Column2->Name = L"Column2";
+			this->Column2->ReadOnly = true;
+			// 
+			// Column5
+			// 
+			this->Column5->HeaderText = L"N°celular";
+			this->Column5->Name = L"Column5";
+			this->Column5->ReadOnly = true;
+			// 
+			// Precio
+			// 
+			this->Precio->HeaderText = L"Precio";
+			this->Precio->Name = L"Precio";
+			this->Precio->ReadOnly = true;
+			// 
+			// Column3
+			// 
+			this->Column3->HeaderText = L"Cantidad";
+			this->Column3->Name = L"Column3";
+			this->Column3->ReadOnly = true;
+			// 
+			// Column4
+			// 
+			this->Column4->HeaderText = L"Subtotal";
+			this->Column4->Name = L"Column4";
+			this->Column4->ReadOnly = true;
 			// 
 			// ManagerComponentForm
 			// 
@@ -449,5 +466,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 }
 private: System::Void toolStripButton1_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void toolStripButton2_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

@@ -45,6 +45,10 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::ComboBox^ comboBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::TextBox^ textBox5;
 
 	private:
 		/// <summary>
@@ -69,6 +73,10 @@ namespace appgrpucpView {
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -92,7 +100,7 @@ namespace appgrpucpView {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(63, 256);
+			this->label3->Location = System::Drawing::Point(63, 318);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(109, 13);
 			this->label3->TabIndex = 2;
@@ -132,14 +140,14 @@ namespace appgrpucpView {
 			// comboBox1
 			// 
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(253, 253);
+			this->comboBox1->Location = System::Drawing::Point(253, 315);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(250, 21);
 			this->comboBox1->TabIndex = 7;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(128, 367);
+			this->button1->Location = System::Drawing::Point(128, 378);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(104, 26);
 			this->button1->TabIndex = 8;
@@ -148,18 +156,54 @@ namespace appgrpucpView {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(344, 367);
+			this->button2->Location = System::Drawing::Point(347, 378);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(104, 26);
 			this->button2->TabIndex = 9;
 			this->button2->Text = L"Guardar";
 			this->button2->UseVisualStyleBackColor = true;
 			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(63, 245);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(96, 13);
+			this->label5->TabIndex = 10;
+			this->label5->Text = L"Numero de celular:";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(63, 284);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(69, 13);
+			this->label6->TabIndex = 11;
+			this->label6->Text = L"Pagina Web:";
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(253, 242);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(250, 20);
+			this->textBox4->TabIndex = 12;
+			// 
+			// textBox5
+			// 
+			this->textBox5->Location = System::Drawing::Point(253, 281);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(250, 20);
+			this->textBox5->TabIndex = 13;
+			// 
 			// frmComponent
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(568, 439);
+			this->Controls->Add(this->textBox5);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->label6);
+			this->Controls->Add(this->label5);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->comboBox1);
