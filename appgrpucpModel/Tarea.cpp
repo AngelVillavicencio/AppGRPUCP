@@ -1,10 +1,8 @@
 #include "pch.h"
 #include "Tarea.h"
 using namespace appgrpucpModel;
-Tarea::Tarea(int id, String^ descripcion, String^ estado)
-{
-    this->id = id;
-    this->descripcion = descripcion;
-    this->estado = estado;
 
+Tarea::Tarea(int id, DateTime^ fechaInicio, DateTime^ fechaEntrega, String^ Estado, user^ encargado, String^ Titulo, String^ Contenido)
+{
+    throw gcnew System::NotImplementedException();
 }

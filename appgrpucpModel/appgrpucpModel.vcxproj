@@ -126,7 +126,9 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="Projects.h" />
     <ClInclude Include="Providers.h" />
+    <ClInclude Include="Question.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Survey.h" />
     <ClInclude Include="Tarea.h" />
     <ClInclude Include="user.h" />
     <ClInclude Include="workshop.h" />
@@ -143,6 +145,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Question.cpp" />
+    <ClCompile Include="Survey.cpp" />
     <ClCompile Include="Tarea.cpp" />
     <ClCompile Include="user.cpp" />
     <ClCompile Include="workshop.cpp" />

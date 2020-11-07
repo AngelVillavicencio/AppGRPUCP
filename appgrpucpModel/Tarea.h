@@ -1,5 +1,5 @@
 #pragma once
-
+#include "user.h"
 
 namespace appgrpucpModel 
 {
@@ -9,22 +9,16 @@ namespace appgrpucpModel
 	{
 	private:
 		int id;
-		String^ descripcion;
-		String^ estado;
-
+		DateTime^ fechaInicio;
+		DateTime^ fechaEntrega;
+		String^ Estado;
+		user^ encargado;
+		String^ Titulo;
+		String^ Contenido;
 	public:
-		Tarea(int id, String^ descripcion , String^ estado);
-
-
-
-
+		Tarea(int id, DateTime^ fechaInicio,DateTime^ fechaEntrega,String^ Estado,user^ encargado,String^ Titulo,String^ Contenido);
 
 	};
-
-
-
-
-
 }
 
 

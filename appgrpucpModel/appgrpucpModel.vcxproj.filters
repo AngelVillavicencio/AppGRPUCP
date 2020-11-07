@@ -12,6 +12,8 @@
     <ClCompile Include="Providers.cpp" />
     <ClCompile Include="Session.cpp" />
     <ClCompile Include="Supplies.cpp" />
+    <ClCompile Include="Survey.cpp" />
+    <ClCompile Include="Question.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="appgrpucpModel.h" />
@@ -25,6 +27,8 @@
     <ClInclude Include="workshop.h" />
     <ClInclude Include="Session.h" />
     <ClInclude Include="Supplies.h" />
+    <ClInclude Include="Survey.h" />
+    <ClInclude Include="Question.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />

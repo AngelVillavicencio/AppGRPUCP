@@ -14,15 +14,14 @@ namespace appgrpucpModel
 		String^ email;
 		String^ phoneNumber;
 		String^ emailPucp;
-		//falta definir photo
 		String^ career;
-		String^ cargo;
+		String^ charge;
+		//falta definir photo
 		String^ Entrydate;
 		String^ BirthDate;
 		String^ userName;
-		String^ contrasena;
-		/*contacto de emergencia*/
-		String^ contactEmergencyName;
+		String^ password;
+		String^ contactEmergencyName;  /*contacto de emergencia*/
 		String^ contactEmergencyRelation;
 		String^ contactEmergencyNumber;
 		
