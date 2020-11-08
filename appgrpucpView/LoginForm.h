@@ -11,7 +11,9 @@ namespace appgrpucpView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+	using namespace appgrpucpController;
+	using namespace appgrpucpModel;
+	using namespace appgrpucpView;
 
 	/// <summary>
 	/// Resumen de LoginForm
@@ -41,8 +43,10 @@ namespace appgrpucpView {
 	private: System::Windows::Forms::Label^ label1;
 	protected:
 	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::TextBox^ txtLoginUsername;
+	private: System::Windows::Forms::TextBox^ txtLoginPassword;
+
+
 	private: System::Windows::Forms::Button^ btnLogin;
 	private: System::Windows::Forms::LinkLabel^ linkForgottenPassword;
 	private: System::Windows::Forms::LinkLabel^ linkRegister;
@@ -62,8 +66,8 @@ namespace appgrpucpView {
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->txtLoginUsername = (gcnew System::Windows::Forms::TextBox());
+			this->txtLoginPassword = (gcnew System::Windows::Forms::TextBox());
 			this->btnLogin = (gcnew System::Windows::Forms::Button());
 			this->linkForgottenPassword = (gcnew System::Windows::Forms::LinkLabel());
 			this->linkRegister = (gcnew System::Windows::Forms::LinkLabel());
@@ -91,21 +95,21 @@ namespace appgrpucpView {
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Contraseña";
 			// 
-			// textBox1
+			// txtLoginUsername
 			// 
-			this->textBox1->Location = System::Drawing::Point(185, 26);
-			this->textBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(179, 22);
-			this->textBox1->TabIndex = 2;
+			this->txtLoginUsername->Location = System::Drawing::Point(185, 26);
+			this->txtLoginUsername->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->txtLoginUsername->Name = L"txtLoginUsername";
+			this->txtLoginUsername->Size = System::Drawing::Size(179, 22);
+			this->txtLoginUsername->TabIndex = 2;
 			// 
-			// textBox2
+			// txtLoginPassword
 			// 
-			this->textBox2->Location = System::Drawing::Point(185, 71);
-			this->textBox2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(179, 22);
-			this->textBox2->TabIndex = 3;
+			this->txtLoginPassword->Location = System::Drawing::Point(185, 71);
+			this->txtLoginPassword->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->txtLoginPassword->Name = L"txtLoginPassword";
+			this->txtLoginPassword->Size = System::Drawing::Size(179, 22);
+			this->txtLoginPassword->TabIndex = 3;
 			// 
 			// btnLogin
 			// 
@@ -154,8 +158,8 @@ namespace appgrpucpView {
 			this->Controls->Add(this->linkRegister);
 			this->Controls->Add(this->linkForgottenPassword);
 			this->Controls->Add(this->btnLogin);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->txtLoginPassword);
+			this->Controls->Add(this->txtLoginUsername);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);

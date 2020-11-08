@@ -24,11 +24,19 @@ System::Void appgrpucpView::LoginForm::linkRegister_LinkClicked(System::Object^ 
 
 System::Void appgrpucpView::LoginForm::btnLogin_Click(System::Object^ sender, System::EventArgs^ e)
 {
-    frmLayout^ ventanaPrincipal = gcnew frmLayout();
-    ventanaPrincipal->Show();
+    List<user^>^ listUsers = GestorUsuario::queryuser();
+    for (int i = 0; i<listUsers->Count ; i++) {
+        if (txtLoginUsername->Text == listUsers[i]->userName && txtLoginPassword->Text == listUsers[i]->password) {
+            frmLayout^ ventanaPrincipal = gcnew frmLayout();
+            ventanaPrincipal->Show();
+            break;
+        }
+
+        if (listUsers->Count == i-1) {
+            MessageBox::Show("Cuenta no registrada");
+        }
+    }
     
-    
-    return System::Void();
 }
 
 System::Void appgrpucpView::LoginForm::linkForgottenPassword_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e)
