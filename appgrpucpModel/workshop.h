@@ -19,6 +19,7 @@ namespace appgrpucpModel
 	public:
 
 		workshop(int id, String^ tittle, String^ topic, String^ descripcion);
+		workshop () {};
 
 
 
