@@ -1,6 +1,10 @@
 #include "pch.h"
 #include "GestorUsuario.h"
+
 using namespace appgrpucpController;
+using namespace System::IO;
+using namespace System::Runtime::Serialization;
+using namespace System::Runtime::Serialization::Formatters::Binary;
 
 GestorUsuario::GestorUsuario()
 {
@@ -43,3 +47,17 @@ void GestorUsuario::cerrarConexion()
 {
 	this->conexion->Close();
 }
+
+void appgrpucpController::GestorUsuario::adduser(user^ usuario)
+{
+	userDB->Userlist->Add(usuario);
+	userDB->PersistToBinaryFile();
+	
+}
+
+List<user^>^ appgrpucpController::GestorUsuario::queryuser()
+{
+	userDB->LoadFromBinaryFile();
+	return userDB->Userlist;
+}
+
