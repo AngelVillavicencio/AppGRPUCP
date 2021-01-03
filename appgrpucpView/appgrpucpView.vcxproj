@@ -129,6 +129,7 @@
     <ClCompile Include="frmLayout.cpp" />
     <ClCompile Include="frmMantTareas.cpp" />
     <ClCompile Include="frmMantUsuario.cpp" />
+    <ClCompile Include="frmNewWorkshop.cpp" />
     <ClCompile Include="frmNotifications.cpp" />
     <ClCompile Include="frmProfile.cpp" />
     <ClCompile Include="frmRegistro.cpp" />
@@ -157,6 +158,9 @@
     <ClCompile Include="SignForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="frmNewWorkshop.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmNotifications.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -199,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantUsuario.resx">
       <DependentUpon>frmMantUsuario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewWorkshop.resx">
+      <DependentUpon>frmNewWorkshop.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNotifications.resx">
       <DependentUpon>frmNotifications.h</DependentUpon>
